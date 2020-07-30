@@ -1,11 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Ninja School Survey Form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Ninja Training School</h1>
+        <p id="description" class="description text-center">
+          Do you have what it takes to become a Ninja?
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>What is your weapon of choice></p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current weapon</option>
+            <option value="kantana">Kantana</option>
+            <option value="dart">Poison Dart</option>
+            <option value="throwing stars">Throwing stars</option>
+            <option value="kunai">Kunai</option>
+            <option value="all of the above"> All of the above</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend any of the weapons?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="Yes"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="No"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="Master of All"
+              type="radio"
+              class="input-radio"
+            />Master of All</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>
+            Who is your favorite ninja?
+          </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select a Master!</option>
+            <option value="fujibayashi nagato">Fujibayashi Nagato</option>
+            <option value="momochi sandayu">Momochi Sandayu</option>
+            <option value="ishikawa goemon">Ishikawa Goemon</option>
+            <option value="hattori hanzo">Hattori Hanzo</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What areas would you like to improve?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="unarmed combat"
+              type="checkbox"
+              class="input-checkbox"
+            />Unarmed combat</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="ninja sword"
+              type="checkbox"
+              class="input-checkbox"
+            />Ninja Sword</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="stick and staff training"
+              type="checkbox"
+              class="input-checkbox"
+            />Stick and Staff Training</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="throwing blades"
+              type="checkbox"
+              class="input-checkbox"
+            />Throwing Blades</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="spear fighting"
+              type="checkbox"
+              class="input-checkbox"
+            />Spear Fighting</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="chain and sickle weapon"
+              type="checkbox"
+              class="input-checkbox"
+            />Chain and Sickle Weapon</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="espionage"
+              type="checkbox"
+              class="input-checkbox"
+            />Espionage</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="escape and concealment"
+              type="checkbox"
+              class="input-checkbox"
+            />Escape and Concealment</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="stealth and entering methods"
+              type="checkbox"
+              class="input-checkbox"
+            />Stealth and Entering Methods</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions? </p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter Your Details Below..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            You Are Ready!
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
