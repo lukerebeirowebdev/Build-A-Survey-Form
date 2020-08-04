@@ -40,7 +40,7 @@ body::before {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 400;
   line-height: 1.2;
   font-family: "Orbitron";
@@ -116,7 +116,7 @@ button {
 
 .clue {
   margin-left: 0.25rem;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #e4e4e4;
 }
 
@@ -195,4 +195,8 @@ form {
   cursor: pointer;
   font-family: "Orbitron";
   font-size: 25px
+}
+
+.RFE {
+  font-size: 1rem;
 }
