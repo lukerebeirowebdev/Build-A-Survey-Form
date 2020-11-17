@@ -198,3 +198,14 @@ form {
 width: 100%;
 align-items: center
 }
+
+a {
+  justify-items: center;
+  text-decoration: none;
+  color: #ced4da;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 50px;
+}
